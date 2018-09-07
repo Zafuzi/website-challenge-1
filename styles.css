@@ -114,6 +114,11 @@ a:hover {
     object-position: top;
 }
 
+.preload {
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+
 /* MODAL */
 .modal {
     position: fixed;
