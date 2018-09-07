@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn CSS Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside class="blur">
+        <h1>Dzine</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
+    <main class="blur">
+        <article style="width: 100%; text-align: left;">
+            <h2 id="about">About Us</h2>
+            <p>The best design comes from simplicity. That's why we do things as lazily as possible.</p>
+        </article>
+        
+        <h2 style="width: 100%; text-align: left;">Projects</h2>
+        <article id="projects">
+            <div class="project" id="tpl_project">
+                <img class="preload ripple" onload="fadeIn(this)"  src="__img__">
+            </div>
+        </article>
+        <article style="width: 100%; text-align: left;">
+            <h2 id="contact">Contact Us</h2>
+            <a href="mailto:zacharyfoutz@gmail.com">Email</a>
+            <a href="tel:+13609900694">Call</a>
+        </article>
+    </main>
+    <div class="modal" id="project_modal">
+        <div class="modal_content" id="project_modal_content">
+            <h2>__name__</h2>
+            <a href="__link__" target=_blank>Visit Site</a>
+            <p>__description__</p>
+            <img class="preload" onload="fadeIn(this)" src="__img__">
+        </div>
+    </div>
+    
+    <script src="replicate.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
